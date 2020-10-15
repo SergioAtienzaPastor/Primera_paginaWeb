@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin:  0;
+    border: solid 1px black;
+}
+body{
+    background-color: rgb(63, 6, 2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+header{
+    background-image: url(../img/fondo.jpg);
+    background-repeat: 1;
+    height: 100vh;
+    width: 250vh;
+    color: azure;
+}
+#menu{
+    padding: 50px 0;
+}
+header #menu ul{
+    margin: 0;
+    padding: 0;
+
+}
+header #menu ul li{
+    display: inline-block;
+    padding: 10px;
+    vertical-align: middle;
+}
+header #menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+header #menu ul li a:hover{
+    text-decoration: underline;
+}
+header #menu ul #logo{
+    margin-right: 40%;
+    margin-left: 40%;
+}
