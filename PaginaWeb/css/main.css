@@ -1,41 +1,64 @@
 *{
-    padding: 0;
-    margin:  0;
-    border: solid 1px black;
+    padding: 0px;
+    margin:  0px;
+    
 }
 body{
-    background-color: rgb(63, 6, 2);
+    background-color:rgb(254, 194, 0);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
-header{
-    background-image: url(../img/fondo.jpg);
-    background-repeat: 1;
-    height: 100vh;
-    width: 250vh;
-    color: azure;
-}
-#menu{
-    padding: 50px 0;
-}
-header #menu ul{
-    margin: 0;
+
+
+header #menu ul #logo a img{
     padding: 0;
+    width: 100%;
+    height: 600px;
+}
+header #menu  {
+
 
 }
-header #menu ul li{
-    display: inline-block;
-    padding: 10px;
-    vertical-align: middle;
+
+header #menu ul .menu2 ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-header #menu ul li a{
+header #menu ul .menu2 ul li{
+    float: left;
+}
+header #menu ul .menu2 ul li a{
+    padding: 0;
     color: white;
-    text-decoration: none;
+    text-decoration:none;
+    display:block;
+    padding: 12px 36px;
+    font-size: 18px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f85032+0,f16f5c+50,f6290c+51,f02f17+71,e73827+100;Red+Gloss+%231 */
+background: rgb(248,80,50); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(248,80,50,1) 0%,rgba(241,111,92,1) 50%,rgba(246,41,12,1) 51%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(248,80,50,1) 0%,rgba(241,111,92,1) 50%,rgba(246,41,12,1) 51%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=0 ); /* IE6-9 */
 }
-header #menu ul li a:hover{
-    text-decoration: underline;
+header #menu ul .menu2 ul li a:hover{
+    color:black;
+    background: rgb(219, 115, 17);
+    animation: 1s ms 1;
+}
+@keyframes ms{
+    0%{
+        opacity: 0;
+        transform:scale(1.6);
+    }
 }
 header #menu ul #logo{
-    margin-right: 40%;
-    margin-left: 40%;
+    /*background-color: 	#fec200;*/
+    width: 100%;
+    height: 100%;
+}
+header #menu ul li a img{
+    width: 50%;
+    padding-left: 20%;
 }
