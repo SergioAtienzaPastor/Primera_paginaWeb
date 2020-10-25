@@ -8,19 +8,19 @@ function scrollUp(){
     if(desplazamiento>0){
         
         window.requestAnimationFrame(scrollUp);
-        window.scrollTo(0,desplazamiento-(desplazamiento/10));
+        window.scrollTo(0,desplazamiento-(desplazamiento/23));
     }
 }
 
 buttonUp=document.getElementById("boton");
 window.onscroll = function(){
     var scroll = document.documentElement.scrollTop;
-    if(scroll>200){
+    if(scroll>2000){
         buttonUp.style.transform="scale(1)";
-    }else if(scroll < 200){
+    }else if(scroll < 2000){
         buttonUp.style.transform="scale(0)";
     }
 }
 function alerta(){
-    alert("No proogramado aun ");
+    alert("No programado aun ");
 }
