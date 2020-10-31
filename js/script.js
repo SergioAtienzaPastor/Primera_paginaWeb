@@ -24,3 +24,15 @@ window.onscroll = function(){
 function alerta(){
     alert("No programado aun ");
 }
+function getanswer(q){
+    $.get("http://www.omdbapi.com/?s="+q+"&apikey=a5eb3f80",function(rawdata){
+        var rawstring=JSON.stringify(rawdata);
+        data=JSON.parse(rawstring)
+        var title=data.Search[0].Title;
+        var year=data.Search[0].Year;
+        var imdburl="https://www.imdb.com/title/"+data.Search[0].imdbID+"/";
+        var posterurl=data.Search[0].Poster;
+        document.getElementById('answer').innerHTML="<h1>"+title+"</h1><br><img src="+posterurl+"/><br><p>Year Released:"+year+"</p><br><p>IMDB page:<a href="+imdburl+"target='_blamnk>"+imdburl+"</a></p>";
+        
+    })
+}
